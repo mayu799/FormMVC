@@ -1,0 +1,41 @@
+﻿@model form1.Models.Students
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetPersonalDetails</title>
+    <style>
+        body{text-align:center; border-color:white; border-width:5px; border-style:solid;background-color:lightblue;padding:5%;}
+    </style>
+</head>
+<body>
+    <div>
+
+        <form action="SetPersonalDetails" method="post">
+            <h2>Personal Details</h2>
+            <label>FirstName : </label>
+            <input type="text" name="FirstName" placeholder="First Name" />
+            <br />
+            <label>LastName  : </label>
+            <input type="text" name="LastName" placeholder="Last Name" />
+            <br />
+            <label>Age       :</label>
+            <input type="text" name="Age" placeholder="Age" />
+            <br />
+            <label>Gender    : </label>
+            <input type="text" name="Gender" placeholder="Gender" />
+            <br />
+            <label>City      : </label>
+            <input type="text" name="City" placeholder="City" />
+            <br /><br />
+            <input type="submit" value="Save" />
+        </form>
+    </div>
+</body>
+</html>

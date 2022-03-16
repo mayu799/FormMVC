@@ -1,0 +1,35 @@
+﻿@model form1.Models.Students
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SetPersonalDetails</title>
+    <style>
+        body {
+            text-align:center;
+            border-color: white;
+            border-width: 5px;
+            border-style: solid;
+            background-color: lightblue;
+            padding: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Personal details</h1>
+
+        <h3> FirstName : @Model.FirstName</h3>
+        <h3> LastName  : @Model.LastName</h3>
+        <h3> Age       : @Model.Age</h3>
+        <h3> Gender    : @Model.Gender</h3>
+        <h3> City      : @Model.City</h3>
+    </div>
+</body>
+</html>
